@@ -1187,6 +1187,7 @@ def main(apiurl, opts, argv):
     cmd = [ config['build-cmd'], '--root='+build_root,
                     '--rpmlist='+rpmlist_filename,
                     '--dist='+bc_filename,
+                    '--repodir='+pradir,
                     '--arch='+bi.buildarch ]
     cmd += specialcmdopts + vm_options + buildargs
     cmd += [ build_descr ]
